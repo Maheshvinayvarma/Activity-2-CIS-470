@@ -1,0 +1,11 @@
+Task 3 & 4:
+
+Line 72: Change "let taxableIncome = income + getDeductions" to "let taxableIncome = income - getDeductions" since deductions are subtracted from income to get taxable income.
+Line 91: Update "let stateTaxableIncome = income + getDeductions" to "let stateTaxableIncome = income - getDeductions" for consistency.
+Line 77: Modify "federalTax += (taxableIncome - taxBrackets[1].lowerBound)" to "federalTax += (taxableIncome - taxBrackets[i].lowerBound)" to correctly access the current tax bracket.
+Line 80: Adjust "federalTax += (taxBrackets[i].upperBound - taxBrackets[1].lowerBound)" to "federalTax += (taxBrackets[i].upperBound - taxBrackets[i].lowerBound)" for correct iteration through tax brackets.
+Line 123: Update "deductions += mortgage + studentLoan - medicalExpenses" to "deductions += mortgage + studentLoan + medicalExpenses" to properly include medical expenses in deductions.
+Line 94: Add a statement to check if the state tax is less than 0 and set it to 0 if necessary to avoid negative taxes in the output.
+
+Task 5:
+To solve the errors/exceptions, I followed the steps of the algorithm as described in the task. The first step is to resolve any issue that does not meet the requirements as mentioned in the description. The second step is to check if the taxable, mortgage, student loan, and medical expenses are non-negative. Then, I have a dry run to check if everything works as expected. After working on the test case which does not meet the result mentioned. And then fixed the necessary code to pass the test cases.
